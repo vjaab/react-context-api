@@ -13,11 +13,11 @@ class App extends React.Component {
   render() {
     return (
       <myContext.Provider value={{ counter: 10, name: 'kumar' }}>
-        <div>
           <h1>Hello StackBlitz!</h1>
           <p>Start editing to see some magic happen :)</p>
           <Hello name="Vijay" count={this.state.count} />
-        </div>
+          <ErrorBoundary>
+          </ErrorBoundary>
       </myContext.Provider>
     );
   }
